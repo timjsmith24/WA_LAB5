@@ -3,10 +3,10 @@
 
 ## Requirements
 
-This script was written to use the python version 2.7 that comes installed default with mac os. To preform a ssh connection to network devices 
-the paramiko module will need to be installed. 	This module is needed in order to run this script. Please see the Setup Section at the bottom for instructions on installing the needed module. 
+This script was written to use python version 2.7 that comes installed default with mac os. To preform a ssh connection to network devices the paramiko module will need to be installed.  
+This module is needed in order to run this script. Please see the Setup Section at the bottom for instructions on installing the needed module. 
 
-With paramiko installed open wa_lab.py with a text editor and edit lines 11-13 with the APs IP address, username, and user password. 
+With paramiko installed, open wa_lab.py with a text editor and edit lines 11-13 with the APs IP address, username, and user password. 
 lines 14-15 allow you to set the random min and max times that will be used in the script. Once these lines are edited to your liking you can save the updated script.
 
 ```python
@@ -23,7 +23,7 @@ You can start the script, using terminal, by entering ```python wa_lab.py``` in 
 Establishing Connection with 192.168.1.146
 Enter q to exit Lab: 
 ```
-While in this state the script will pick a random number between the set min and max numbers, wait the random number of seconds and then alternate the power level of Radio 2 between 1 and 30. 
+While in this state the script will repeat a loop of picking a random number between the set min and max numbers, wait the random number of seconds and then alternate the power level of Radio 2 between 1 and 30. 
 
 To end the script you must type 'q' or you will recieve an ```invalid entry``` error. Once q is typed and entered the following message will come up. Once the next power change is made the ssh connection will end and display the 'Connection Closed' message and the script will end.
 ```
@@ -49,7 +49,7 @@ def main():
 ```python 
 def main():
 ```
-This is where the script actually starts. It firsts establishes the ssh connection to the AP, starts a seperate thread to the ```check_break()``` function, then passes the ssh session to the ```run_wa_lab5()``` function. Once the global variable ```quit_lab``` is changed to True in the ```check_break()``` function the ```run_wa_lab5()``` function will complete. The main function will then proceed and pass the ssh session to the ```close()``` function. This will close the ssh session to the AP.
+As named, this is the main section of the script. The script actually starts here and will call the other functions. The functions will establish the ssh connection to the AP, starts a seperate thread to the ```check_break()``` function, then passes the ssh session to the ```run_wa_lab5()``` function. Once the global variable ```quit_lab``` is changed to True in the ```check_break()``` function the ```run_wa_lab5()``` function will complete. Then the main function will then proceed and pass the ssh session to the ```close()``` function. This will close the ssh session to the AP.
 
 ```python
 def establish_connection():
