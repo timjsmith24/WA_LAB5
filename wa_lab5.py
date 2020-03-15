@@ -10,7 +10,7 @@ quit_lab = False
 
 host = "192.168.1.146"
 user = 'admin'
-pw = 'c0bra42b'
+pw = 'admin1234'
 min_time = 10
 max_time = 60
 
