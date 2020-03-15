@@ -32,7 +32,7 @@ The script will quit when time runs out on this round
 ```
 
 <p align="center">
-<img src="../master/images/wifi_explorer.png.png" alt="wifi explorer image" height="400px">
+<img src="../master/images/wifi_explorer.png" alt="wifi explorer image" height="400px">
 </p>
 
 
