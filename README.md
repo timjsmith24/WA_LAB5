@@ -83,7 +83,7 @@ This function closes the ssh session and displays ```** Connection Closed **``` 
 
 pip can be used to install modules but that will need to be installed on the mac if it currently is not. 
 
-To check if pip is currently installed, in Terminal run ```pip --version```. If pip is installed a version number will be in the response. If pip is not installed it can be installed by running ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` followed by ```python get-pip.py```
+To check if pip is currently installed, in Terminal run ```pip --version```. If pip is installed a version number will be in the response. If pip is not installed it can be installed by running ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` followed by ```sudo python get-pip.py```
 
 > credit [blog](https://ahmadawais.com/install-pip-macos-os-x-python/) - can view for more detailed instructions
 
